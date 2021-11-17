@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>mysite</title>
+</head>
+
+<body>
+  <div class="rigister">
+
+    <div class="rigister-box">
+      <div id="nav">
+
+        <form action="login.html" method="POST" class="login_html-form"><button class="login"
+            type="submit"><span>登录</span></button> </form> |
+        <span id="rigister-text">注册</span>
+      </div>
+      <form action="registering.html" method="POST" class="rigister-form">
+        <div class="logo"><img src="logo.jpg" /></div>
+        <input class="txtb" type="text" name="user" placeholder="Username" required="required" />
+        <input class="txtb" type="password" name="password" placeholder="Password" required="required" />
+        <button class="login-btn" type="submit" name="" value="Login" disabled="disabled">Login</button>
+        <button class="rigister-btn" type="submit" name="" value="Register">Register</button>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>
+<style scoped>
+  * {
+    font-family: "montserrat", sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    text-align: center;
+    font-family: Avenir, Helvetica, Arial, sans-serif
+  }
+
+  #nav {
+    text-align: center;
+    padding: 30px;
+  }
+
+  #rigister-text {
+    font-weight: bold;
+
+  }
+
+  .login_html-form {
+    display: inline;
+  }
+
+  .login_html-form button {
+    border: 0px;
+    padding: 0px;
+    font-size: 16px;
+    background: none;
+  }
+
+
+  .rigister-box {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* vh 视口高度 viewport height 百分比单位*/
+    text-align: center;
+
+    background-image: linear-gradient(45deg,
+        #9fbaa8,
+        #467cce);
+    /*设置颜色渐变 方向(0deg垂直向上) 起点颜色 终点颜色*/
+    transition: 0.4s;
+    /*过度效果  property duration timing-function delay 默认属性:all 0 ease 0*/
+  }
+
+  .rigister-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    align-items: center;
+    vertical-align: 50%;
+
+  }
+
+  .logo {
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white;
+
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-left: 70px;
+
+
+
+  }
+
+  .logo img {
+    height: 100%;
+
+  }
+
+  .txtb {
+    display: block;
+    box-sizing: border-box;
+    width: 240px;
+    background: #ffffff28;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    outline: none;
+    margin: 10px 0;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  .login-btn {
+    width: 110px;
+    background: #4b6c8b;
+    border: 0;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+
+  }
+
+  .rigister-btn {
+    width: 110px;
+    background: #2c3e50;
+    border: 0;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+
+  }
+</style>

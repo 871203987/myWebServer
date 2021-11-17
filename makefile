@@ -1,0 +1,2 @@
+server: main.cpp webSvr.cpp config/config.cpp utils/utils.cpp http_conn/http_conn.cpp mysql_pool/mysql_pool.cpp locker/locker.cpp timer/timer.cpp log/log.cpp thread_pool/thread_pool.h
+	g++ main.cpp webSvr.cpp config/config.cpp utils/utils.cpp http_conn/http_conn.cpp mysql_pool/mysql_pool.cpp locker/locker.cpp timer/timer.cpp log/log.cpp thread_pool/thread_pool.h -o server -lpthread `mysql_config --cflags --libs`
